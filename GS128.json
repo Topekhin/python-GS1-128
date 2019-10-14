@@ -1,0 +1,77 @@
+{
+   "00": {
+       "Description": "Serial Shipping Container Code (SSCC)",
+       "Length": 18
+   },
+
+   "01": {
+       "Description" : "Global Trade Item Number (GTIN)",
+       "Length": 14
+   },
+
+   "02": {
+       "Description" : "GTIN of Contained Trade Items",
+       "Length": 14
+   },
+
+   "10": {
+       "Description" :"Batch/Lot Number",
+       "Length": 0,
+       "MaxLength": 20
+   },
+
+   "11": {
+       "Description" :"Production Date",
+       "Length": 6
+   },
+
+   "13": {
+       "Description" :"Packaging Date",
+       "Length": 6
+   },
+
+   "15": {
+       "Description" :"Best Before Date",
+       "Length": 6
+   },
+
+   "17": {
+       "Description" :"Expiration Date",
+       "Length": 6
+   },
+
+   "21": {
+       "Description" :"Serial Number",
+       "Length": 0,
+       "MaxLength": 20
+   },
+
+   "37": {
+       "Description" :"Number of Units Contained",
+       "Length": 0,
+       "MaxLength": 8
+   },
+
+   "91": {
+       "Description" :"Internal Company Code",
+       "Length": 0,
+       "MaxLength": 90
+   },
+
+   "92": {
+       "Description" :"Internal Company Code",
+       "Length": 0,
+       "MaxLength": 90
+   },
+
+
+   "93": {
+       "Description" :"Internal Company Code",
+       "Length": 0,
+       "MaxLength": 90
+   }
+}
+
+
+
+
