@@ -20,7 +20,7 @@ class GS128(object):
 
     def _decode_field(self, field):
         if len(field) == 0:
-            return False
+            return None, None, None, False
 
         pointer = 0
         identificator = self._getData(field, pointer, 2)
@@ -55,6 +55,12 @@ class GS128(object):
     def decode(self, code):
         if isinstance(code, bytes) == False:
              code = code.encode('utf-8')
+
+        if code[0] == 29:
+            code = code[1:]
+        else:
+            print('WARNING: Not correct GS1-128 code: FNC1 character not found.')
+
         fields = re.split(b'\x1d', code)
         result = dict()
 
